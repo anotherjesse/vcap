@@ -24,10 +24,6 @@ echo ""
 echo "Hopefully this will be the last time you type your password"
 sudo ls > /dev/null
 
-read -p "Enter the password you want to use for root mysql user: " MYSQL_PASS
-
-read -p "Enter the password you want to use for root postgresql user: " POSTGRESQL_PASS
-
 echo "Installing dependencies"
 if [[ $PLATFORM == 'Linux' ]]; then
   sudo apt-get update
